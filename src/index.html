@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Resumo Pedido</title>
+</head>
+<body>
+  <main>
+    <div id="mensagem">
+              
+    </div>
+    <div class="pedidoContainer">
+      <img src="/src/design/images/illustration-hero.svg" alt="" class="hero">
+      <div class="pedidoInfo container">
+        <h2 class="pedidoTitle">
+          Resumo do Pedido
+        </h2>
+        <p class="pedidoDescricao">
+          Agora você pode ouvir milhões de músicas, audiolivros e podcasts em qualquer dispositivo de onde quiser!
+        </p>
+      </div>
+      
+      <div class="assinaturaContainer container">
+        <div class="assinatura">
+          <img src="/src/design/images/icon-music.svg" alt="" class="icon">
+          <div class="assinaturaInfo">
+            <h3 class="assinaturaTitle">
+              Plano Anual
+            </h3>
+            <p class="assinaturaValor" id="valorPagar"></p>
+            <div id="amount">
+
+            </div>
+            
+          </div>
+        </div>
+        <a href="#" class="botaoModificar">Modificar</a>
+      </div>
+      <div class="btn">
+        <button class="botaoPagamento" onclick="payment()" id="pagamento" style="color: white;">
+          Prosseguir para pagamento
+        </button>
+      </div>
+      <button class="botaoCancelar" style="color: 	#708090;">
+        Cancelar pedido
+      </button>
+    </div>
+
+    <div class="atribution">
+      Coded by <a href="#">Rafael Silva</a>
+    </div>
+
+    <script src="/src/scripts/Conta.js"></script>
+    <script src="/src/scripts/Pagamento.js"></script>
+    <script src="/src/scripts/Assinatura.js"></script>
+  <main>
+</body>
+</html>

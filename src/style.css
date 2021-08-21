@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --p-pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desatured-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html,
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100%;
+}
+
+body {
+  background-color: var(--p-pale-blue);
+  background-image: url("/src/design/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pedidoContainer {
+  width: 450px;
+  background-color: #fff;
+  border-radius: 1rem;
+  color: var(--dark-blue);
+  text-align: center;
+  margin-bottom: 1rem;
+  margin: 0 35% 0;
+}
+
+.pedidoDescricao {
+  color: var(--desatured-blue);
+  padding-bottom: 1rem;
+  font-size: 16px;
+}
+
+.pedidoTitle {
+  padding: 2rem 0 1rem 0;
+  font-weight: 900;
+}
+
+.hero {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.assinaturaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.assinatura {
+  display: flex;
+}
+
+.icon {
+  width: 5.5rem;
+  height: 5.5rem;
+  margin: 20px 10px 0 0;
+}
+
+button {
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 10px 0;
+}
+
+.botaoModificar {
+  color: var(--dark-blue);
+}
+
+.botaoPagamento {
+  background-color: var(--bright-blue);
+  box-shadow: inset 0 0 1em var(--bright-blue), 0 0 1em var(--bright-blue);
+}
+
+.botaoCancelar {
+  margin: 20px 0;
+}
+
+.mensagem-parabens {
+  width: 400px;
+  height: 70px;
+  background-color: #3CB371;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.mensagem-parabens p{
+  padding: 6% 4% 0;
+  font-weight: bold;
+}
+
+.mensagem-erro {
+  width: 400px;
+  height: 70px;
+  background-color: #FF3030;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.mensagem-erro p{
+  padding: 6% 15% 0;
+  font-weight: bold;
+}
